@@ -33,9 +33,11 @@ pub enum FileLookupError {
 
 ## Installation
 
-This crate is not on [crates.io](https://crates.io/), but you can install it with `cargo`:
+This crate is on [crates.io](https://crates.io/crates/file_lookup).
 
-```bash
-$ cargo add --git
-https://github.com/bpshaver/file_lookup
+Install it with `cargo`:
+
+```zsh
+$ cargo add file_lookup
 ```
+
