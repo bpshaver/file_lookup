@@ -1,8 +1,9 @@
 use std::env;
-use std::path::PathBuf;
-
 use std::error::Error;
 use std::fmt;
+use std::path::PathBuf;
+
+mod doctest;
 
 #[derive(Debug)]
 pub enum FileLookupError {
