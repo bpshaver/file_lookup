@@ -2,6 +2,8 @@
 name = "file_lookup"
 version = "0.1.0"
 edition = "2021"
+description = "Simple functions to search up in the file tree for a file by name."
+license = "MIT"
 
 [dependencies]
 dirs = "5.0.0"
