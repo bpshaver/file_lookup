@@ -7,3 +7,4 @@ license = "MIT"
 
 [dependencies]
 dirs = "5.0.0"
+log = "0.4.17"
