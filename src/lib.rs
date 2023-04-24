@@ -33,10 +33,6 @@ pub fn find_file(file: &str, under: &PathBuf) -> Result<Option<PathBuf>, FileLoo
         Ok(path) => path,
         Err(_) => return Err(FileLookupError::CwdNotFound),
     };
-    // If you tried to check for the file in the cwd now, you'd have some trouble
-    // In my test, env::current_dir() interprets the name of immedaite dir you're
-    // in as a file, not a directory. But since we first checked in the cwd,
-    // we can start going up the tree immediately:
     for dir in cwd.ancestors() {
         trace!("Looking in {:?}", dir);
         // If we're above the `under` directory (e.g. $HOME),
