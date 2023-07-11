@@ -1,6 +1,7 @@
 # `file_lookup`
 
 For when you want to look up from the current working directory for a file by name.
+
 ## Example Usage
 
 Find a file within your home directory, looking up from your current working directory:
@@ -11,7 +12,7 @@ use file_lookup::home_find_file;
 let path = home_find_file("some_file.json").unwrap();
 ```
 
-Find a file within your root directory (or anyhwere else), looking up from your current working directory:
+Find a file within your root directory (or anywhere else), looking up from your current working directory:
 
 ```rust
 use std::path::PathBuf;
@@ -40,4 +41,3 @@ Install it with `cargo`:
 ```zsh
 $ cargo add file_lookup
 ```
-

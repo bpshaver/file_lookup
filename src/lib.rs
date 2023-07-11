@@ -1,3 +1,11 @@
+/// Find a file within your root directory (or anywhere else), looking up from your current working directory:
+///
+/// ```rust
+/// use std::path::PathBuf;
+/// use file_lookup::find_file;
+///
+/// let path = find_file("some_file.json", &PathBuf::from("/")).unwrap();
+/// ```
 use log::trace;
 use std::env;
 use std::error::Error;
